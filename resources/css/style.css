@@ -7,7 +7,12 @@
   align-items: center;
   justify-content: space-between;
   border-bottom: 1px solid black;
-  padding-right: 30px;
+  z-index: 20;
+  position: fixed;
+  background-color: white;
+  width: 100%;
+  top: 0;
+  left: 0;
 }
 
 .logo {
@@ -20,6 +25,7 @@
 .Navigation {
   display: flex;
   justify-content: flex-end;
+  padding-right: 30px;
 }
 
 .navLinks li {
@@ -27,17 +33,18 @@
   padding: 20px 10px;
 }
 
-.navLinks a {
+a {
   color: black;
 }
 
 .body {
   display: flex;
   justify-content: space-between;
+  position: static;
+  padding-top: 100px;
 }
 
 .col1 {
-  border: 1px solid black;
   display: flex;
   width: 630px;
   margin: 0 auto 78px auto;
@@ -45,7 +52,6 @@
 }
 
 .col2 {
-  border: 1px solid black;
   display: flex;
   width: 300px;
   margin: 0 auto 78px auto;
@@ -53,7 +59,6 @@
 }
 
 .col3 {
-  border: 1px solid black;
   display: flex;
   width: 240px;
   margin: 0 auto 78px auto;
@@ -61,9 +66,104 @@
 }
 
 .articleTitle {
-  border: 1px solid black;
+  font-family: Georgia;
+  font-weight: bold;
+  font-size: 30px;
+  color: white;
 }
 
 .articleBody {
-  border: 1px solid black;
+  font-family: Georgia;
+  font-size: 17px;
+  color: black;
+}
+
+#ArticleTitle1 {
+  background-image:  url("../images/img-story-main.png");
+  height: 300px;
+ }
+
+#ArticleTitle3 {
+  background-image:  url("../images/img-story-2.png");
+  height: 300px;
+  text-align: center;
+  margin-top: 15px;
+}
+
+#ArticleTitle5 {
+  background-image:  url("../images/img-story-3.png");
+  height: 300px;
+  text-align: center;
+  margin-top: 15px;
+}
+
+#ArticleTitle7 {
+  background-image:  url("../images/img-story-1.png");
+  height: 300px;
+  text-align: center;
+}
+
+.articleSub {
+  /*border: 1px solid black;*/
+  display: flex;
+  justify-content: space-between;
+
+}
+
+.story {
+  display: flex;
+    flex-direction: column;
+    width: 300px;
+}
+
+.bitesTitle {
+  flex: ont-size: 16px;
+  font-weight: bold;
+}
+
+.newsBite{
+  flex-flow: wrap column;
+}
+
+.bite {
+  background-color: WhiteSmoke;
+  font-family: Verdana;
+  font-size: 12px;
+  color: DimGray;
+  border-bottom: 1px solid black;
+  padding: 11px 20px;
+}
+
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    height: 325px;
+    background-color: MediumAquamarine;
+    margin: auto;
+    font-family: Verdana;
+    font-size: 12px;
+}
+
+nav span {
+  display: inline-block;
+  padding: 20px 10px;
+}
+
+.title {
+  font-family: Georgia;
+  font-size: 16px;
+  font-weight: bold;
+  color: white;
+}
+
+.info {
+  display: block;
+}
+
+footer nav {
+    display: inline-block;
+    padding-left: 25px;
 }
