@@ -78,6 +78,10 @@ a {
   color: black;
 }
 
+.articleBody h2 {
+    min-height: 100px;
+}
+
 #ArticleTitle1 {
   background-image:  url("../images/img-story-main.png");
   height: 300px;
